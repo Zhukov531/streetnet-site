@@ -3,124 +3,215 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StreetNet — лап-таймер с характером уличного гонщика</title>
-<meta name="description" content="StreetNet — лап-таймер и сегменты для машины. Засекай заезды по GPS, выжимай перегрузки, бей рекорды и стирай своё прошлое время. Всё на устройстве.">
-<meta property="og:title" content="StreetNet — улица помнит каждую сотую">
-<meta property="og:description" content="Лап-таймер и сегменты для машины. Засекай заезды, выжимай перегрузки, бей рекорды.">
+<title>StreetNet — лап-таймер и сегменты для машины</title>
+<meta name="description" content="StreetNet превращает iPhone в точный лап-таймер: время круга по GPS, сегменты, перегрузки и разбор каждого заезда. Всё на устройстве.">
+<meta property="og:title" content="StreetNet — лап-таймер и сегменты для машины">
+<meta property="og:description" content="Время круга по GPS, сегменты, перегрузки и разбор каждого заезда. Всё на устройстве.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&family=Russo+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="topline"></div>
 
 <nav>
   <a class="logo" href="index.html">
     <span class="mark">SN</span>
     <span>StreetNet</span>
   </a>
-  <a class="nav-cta" href="https://testflight.apple.com/join/8xhweDEq" target="_blank" rel="noopener"><span>Влетаю в бету</span></a>
+  <a class="nav-cta" href="https://testflight.apple.com/join/8xhweDEq" target="_blank" rel="noopener">Бета в TestFlight</a>
 </nav>
 
 <main>
   <header class="hero wrap">
-    <div class="streaks"><i></i><i></i><i></i></div>
-    <div class="badge"><span class="dot"></span><span>iOS 26 · Underground Beta</span></div>
-    <h1>Улица помнит<br><span class="grad">каждую сотую</span></h1>
-    <p class="lead">Хватит спорить, кто быстрее. Засекай заезды по GPS, выжимай перегрузки, бей личные рекорды и стирай в порошок своё прошлое время. Лап-таймер с характером уличного гонщика — для трека и закрытых площадок.</p>
+    <div class="badge"><span class="dot"></span> iOS 26 · Закрытая бета</div>
+    <h1>Лап-таймер и сегменты<br>для <span class="grad">твоей машины</span></h1>
+    <p class="lead">StreetNet превращает iPhone в точный хронометр: время круга по GPS, сегменты, перегрузки и подробный разбор каждого заезда. Для трека и закрытых площадок.</p>
     <div class="cta-row">
-      <a class="btn btn-primary" href="https://testflight.apple.com/join/8xhweDEq" target="_blank" rel="noopener"><span>Гнать →</span></a>
-      <a class="btn btn-ghost" href="#features"><span>Что под капотом</span></a>
+      <a class="btn btn-primary" href="https://testflight.apple.com/join/8xhweDEq" target="_blank" rel="noopener">Установить бету</a>
+      <a class="btn btn-ghost" href="#features">Возможности</a>
     </div>
     <p class="fine">Бесплатно по приглашению через TestFlight · нужен iPhone на iOS 26</p>
+
+    <div class="showcase">
+      <div class="glow"></div>
+      <div class="glasscard sc-timer">
+        <div class="lbl">Текущий круг</div>
+        <div class="time">1:23.456</div>
+        <div class="delta">−0.84 к рекорду</div>
+      </div>
+      <div class="glasscard sc-g">
+        <div class="lbl">Боковая перегрузка</div>
+        <div class="row"><span class="big">1.12</span><span class="unit">G</span></div>
+        <div class="bar"><i></i></div>
+      </div>
+      <div class="glasscard sc-pb">
+        <div class="lbl">Лучшие круги</div>
+        <div class="pbrow best"><span class="pos">PB</span> Заезд 7 <span class="t">1:22.61</span></div>
+        <div class="pbrow"><span class="pos">2</span> Заезд 4 <span class="t">1:23.44</span></div>
+        <div class="pbrow"><span class="pos">3</span> Заезд 9 <span class="t">1:23.90</span></div>
+      </div>
+    </div>
   </header>
 
   <section class="block wrap" id="features">
-    <div class="eyebrow">Арсенал</div>
-    <h2 class="h2">Что под капотом</h2>
-    <p class="sub">Создавай трассы, записывай заезды и разбирай каждый круг до сотых секунды.</p>
+    <div class="eyebrow">Возможности</div>
+    <h2 class="h2">Всё для разбора заезда</h2>
+    <p class="sub">Создавай трассы, записывай круги и анализируй каждый заезд по секундам.</p>
     <div class="grid">
-      <div class="card c-cyan">
+      <div class="card">
         <div class="ico">⏱️</div>
         <h3>Хронометраж по GPS</h3>
-        <p>Точное время круга по линии старта и финиша. Таймер стартует сам, как только пересёк линию — руки на руле.</p>
+        <p>Точное время круга по линиям старта и финиша. Таймер стартует сам при пересечении линии.</p>
       </div>
-      <div class="card c-pink">
+      <div class="card i-orange">
         <div class="ico">🏆</div>
         <h3>Рекорды и сегменты</h3>
-        <p>Личный рекорд на каждой конфигурации трассы. Бей своё лучшее время и смотри, как растёшь.</p>
+        <p>Личный рекорд на каждой конфигурации трассы. Следи за прогрессом от заезда к заезду.</p>
       </div>
-      <div class="card c-violet">
+      <div class="card i-violet">
         <div class="ico">📈</div>
         <h3>Перегрузки и Drive Score</h3>
-        <p>Боковые и продольные G, оценка плавности и реакция на старте — прямо по датчикам iPhone.</p>
+        <p>Боковые и продольные G, оценка плавности и реакция на старте по датчикам iPhone.</p>
       </div>
-      <div class="card c-lime">
+      <div class="card">
         <div class="ico">🚩</div>
         <h3>Сплиты по чекпоинтам</h3>
-        <p>Промежуточные времена на контрольных точках. Сразу видно, где сливаешь, а где отыгрываешь.</p>
+        <p>Промежуточные времена на контрольных точках. Видно, где теряешь, а где выигрываешь.</p>
       </div>
-      <div class="card c-cyan">
+      <div class="card i-orange">
         <div class="ico">🎬</div>
-        <h3>Повтор и дуэль</h3>
-        <p>Анимированный реплей заезда на карте и наложение двух кругов с дельтой — ты против себя вчерашнего.</p>
+        <h3>Повтор и сравнение</h3>
+        <p>Анимированный реплей заезда на карте и наложение двух кругов с дельтой по времени.</p>
       </div>
-      <div class="card c-pink">
+      <div class="card i-violet">
         <div class="ico">🏎️</div>
         <h3>Гараж и мото-режим</h3>
-        <p>Профили тачек и байков. Отдельный режим для мотоцикла со своими метриками и ачивками.</p>
+        <p>Профили машин и мотоциклов. Отдельный режим для мото со своими метриками.</p>
       </div>
-      <div class="card c-violet">
+      <div class="card">
         <div class="ico">🎥</div>
         <h3>Видео заездов</h3>
-        <p>Пиши прохождение на камеру с сохранением в Фото. Пересматривай и доказывай, что не показалось.</p>
+        <p>Запись прохождения на камеру с сохранением в «Фото». Пересматривай свои круги.</p>
       </div>
-      <div class="card c-lime">
+      <div class="card i-orange">
         <div class="ico">👥</div>
-        <h3>Заезды стаей</h3>
-        <p>Совместные сессии с тачками рядом — напрямую, без сервера. Метки пилотов прямо на карте.</p>
+        <h3>Совместные заезды</h3>
+        <p>Сессии с участниками рядом напрямую, без сервера. Метки пилотов на карте.</p>
       </div>
-      <div class="card c-cyan">
+      <div class="card i-violet">
         <div class="ico">🏅</div>
-        <h3>Ачивки и челленджи</h3>
-        <p>Десятки наград и сезонных вызовов. Лишний повод выкатиться на трек ещё раз.</p>
+        <h3>Достижения</h3>
+        <p>Десятки наград и сезонных челленджей за заезды, рекорды и стиль вождения.</p>
       </div>
     </div>
   </section>
 
   <section class="block wrap">
-    <div class="eyebrow">Старт</div>
-    <h2 class="h2">От нуля до рекорда</h2>
-    <p class="sub">От установки до записанного заезда — пара минут.</p>
-    <div class="steps">
-      <div class="step">
-        <h3>Размечай трассу</h3>
-        <p>Кинь на карту линии старта и финиша, добавь чекпоинты. Хочешь — замкнутый круг, хочешь — спринт от точки до точки.</p>
+    <div class="split t-blue">
+      <div class="copy">
+        <div class="tag">Хронометраж</div>
+        <h3>Точное время без секундомера в руке</h3>
+        <p>Размечаешь линии старта и финиша на карте — дальше StreetNet всё делает сам. Таймер ловит пересечение по GPS и фиксирует круг до сотых.</p>
+        <ul>
+          <li>Автостарт по пересечению линии</li>
+          <li>Замкнутый круг или спринт от точки до точки</li>
+          <li>Запись продолжается при заблокированном экране</li>
+        </ul>
       </div>
-      <div class="step">
-        <h3>Топи газ</h3>
-        <p>Телефон в держатель, выезжай на старт. Таймер сам поймает пересечение линии и начнёт отсчёт.</p>
+      <div class="visual">
+        <div class="panel">
+          <div class="glow"></div>
+          <div class="mapmock">
+            <svg viewBox="0 0 400 230" preserveAspectRatio="none">
+              <path d="M40 180 C 90 60, 200 40, 250 90 S 360 200, 320 150 S 200 120, 160 170 S 70 210, 40 180 Z" fill="none" stroke="#4d9fff" stroke-width="3" opacity="0.9"/>
+              <circle cx="40" cy="180" r="6" fill="#4d9fff"/>
+              <circle cx="250" cy="90" r="6" fill="#ff7a1a"/>
+            </svg>
+          </div>
+          <div class="cap">Старт · Финиш · 3 чекпоинта</div>
+        </div>
       </div>
-      <div class="step">
-        <h3>Разбирай заезд</h3>
-        <p>Сплиты, графики перегрузок, Drive Score, реплей и сравнение с прошлыми кругами и рекордом.</p>
+    </div>
+  </section>
+
+  <section class="block wrap">
+    <div class="split rev t-violet">
+      <div class="copy">
+        <div class="tag">Телеметрия</div>
+        <h3>Перегрузки и плавность по датчикам</h3>
+        <p>Акселерометр и гироскоп iPhone снимают боковые и продольные G на протяжении круга. StreetNet считает Drive Score и время реакции на старте.</p>
+        <ul>
+          <li>Графики перегрузок по всему заезду</li>
+          <li>Пиковые G в поворотах и при торможении</li>
+          <li>Оценка плавности вождения</li>
+        </ul>
+      </div>
+      <div class="visual">
+        <div class="panel">
+          <div class="glow"></div>
+          <div class="chart">
+            <div class="bar" style="height:40%"></div>
+            <div class="bar" style="height:65%"></div>
+            <div class="bar" style="height:52%"></div>
+            <div class="bar" style="height:88%"></div>
+            <div class="bar" style="height:70%"></div>
+            <div class="bar" style="height:95%"></div>
+            <div class="bar" style="height:60%"></div>
+            <div class="bar" style="height:78%"></div>
+            <div class="bar" style="height:44%"></div>
+          </div>
+          <div class="cap">Боковая перегрузка, пик 1.24 G</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block wrap">
+    <div class="split t-orange">
+      <div class="copy">
+        <div class="tag">Прогресс</div>
+        <h3>Сравнивай круги и бей рекорды</h3>
+        <p>Каждый заезд попадает в историю. Накладывай два круга друг на друга, смотри дельту по дистанции и находи, где именно теряешь время.</p>
+        <ul>
+          <li>Личный рекорд на каждой трассе</li>
+          <li>Наложение двух заездов с дельтой</li>
+          <li>Анимированный повтор на карте</li>
+        </ul>
+      </div>
+      <div class="visual">
+        <div class="panel">
+          <div class="glow"></div>
+          <div class="listmock">
+            <div class="li top"><span class="n">PB</span> Заезд 7 <span class="tm">1:22.61</span></div>
+            <div class="li"><span class="n">2</span> Заезд 4 <span class="tm">1:23.44</span></div>
+            <div class="li"><span class="n">3</span> Заезд 9 <span class="tm">1:23.90</span></div>
+            <div class="li"><span class="n">4</span> Заезд 2 <span class="tm">1:24.78</span></div>
+          </div>
+          <div class="cap">История заездов · Краснодар, картинг</div>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="block wrap">
     <div class="privacy-strip">
-      <h2>Твои заезды — только твои</h2>
-      <p>Никаких аккаунтов и облака. Трассы, заезды и видео живут только на твоём iPhone. Ноль рекламы, ноль аналитики, ноль слива данных налево.</p>
+      <h2>Данные остаются у тебя</h2>
+      <p>Никаких аккаунтов и облака. Трассы, заезды и видео хранятся только на твоём iPhone. Без рекламы, без аналитики, без передачи данных третьим лицам.</p>
       <div class="pill-row">
-        <span class="pill"><span>Без регистрации</span></span>
-        <span class="pill"><span>Без сервера</span></span>
-        <span class="pill"><span>Без рекламы</span></span>
-        <span class="pill"><span>Всё на устройстве</span></span>
+        <span class="pill">Без регистрации</span>
+        <span class="pill">Без сервера</span>
+        <span class="pill">Без рекламы</span>
+        <span class="pill">Всё на устройстве</span>
       </div>
     </div>
+  </section>
+
+  <section class="block wrap finalcta">
+    <h2>Готов засечь свой первый круг?</h2>
+    <p>Установи бету и поезжай на трек.</p>
+    <a class="btn btn-primary" href="https://testflight.apple.com/join/8xhweDEq" target="_blank" rel="noopener">Установить бету</a>
   </section>
 </main>
 

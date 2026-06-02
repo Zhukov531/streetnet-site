@@ -5,8 +5,9 @@
 
 ## Живые адреса
 
-- Лендинг: https://zhukov531.github.io/streetnet-site/
-- Политика: https://zhukov531.github.io/streetnet-site/privacy.html
+- Лендинг: **https://streetnet.ru** (кастомный домен на reg.ru, HTTPS enforced)
+- Политика: **https://streetnet.ru/privacy.html**
+- Резервно: https://zhukov531.github.io/streetnet-site/
 
 Эти URL используются в App Store Connect (TestFlight → «Информация о тестировании»:
 маркетинговый URL и privacy policy URL; privacy обязателен для релиза в App Store).
@@ -67,7 +68,6 @@ CHROME="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 ## TODO
 
-- Купить домен (`streetnet.app` / `.ru`) → положить `CNAME` файл в репо
-  + настроить DNS. Privacy/marketing URL переедут автоматически.
-- Заменить CSS-моки на реальные скриншоты приложения, когда будут.
-- При выкладке в App Store — privacy URL уже готов, вписать в карточку.
+- [x] Домен `streetnet.ru` подключён (CNAME в репо + DNS в reg.ru + HTTPS enforced).
+- [ ] Заменить CSS-моки на реальные скриншоты приложения, когда будут.
+- [ ] Вписать privacy URL в App Store Connect (TestFlight → Информация о тестировании).

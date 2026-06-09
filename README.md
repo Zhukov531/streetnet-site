@@ -21,7 +21,10 @@
 | `style.css`    | токены, база, nav, hero, кнопки, footer |
 | `sections.css` | стили секций (фичи, мокапы, телеметрия) |
 | `app.js`       | интерактив: sticky nav, scroll-reveal, live-таймер, G-meter, parallax, count-up |
-| `favicon.svg`  | фавикон |
+| `favicon.svg`  | фавикон — app-icon chip (светлая плитка + чёрный «sN» монограмм, совпадает с иконкой приложения) |
+| `monogram.svg` | монограмма «sN», только глиф, `currentColor` (вектор, для переиспользования) |
+| `favicon-32.png` / `apple-touch-icon.png` / `icon-512.png` | PNG-иконки (таб / iOS home-screen / общая) |
+| `og.png`       | соц-превью 1200×630 (Open Graph + Twitter card) |
 | `CNAME`        | кастомный домен `streetnet.ru` (НЕ удалять при правках) |
 | `.nojekyll`    | отключает Jekyll-обработку на GitHub Pages |
 
@@ -37,6 +40,11 @@
   фиолетовый `--violet #8b6cff` (= Theme.Color приложения).
 - Визуалы — CSS/SVG-мокапы (реальных скриншотов пока нет; при появлении
   заменить на `<img>`).
+- **Логотип (обновлён 2026-06-10):** монограмма «sN» завекторена из реальной
+  иконки приложения (`AppIcon.png` → potrace → `monogram.svg`). Лого в шапке/
+  футере и фавикон — app-icon chip (светлая плитка + чёрный «sN»), полностью
+  совпадает со store-иконкой. Соц-превью `og.png` собран из chip + вордмарк.
+  Иконки регенерируются: `rsvg-convert -w N -h N favicon.svg -o icon.png`.
 
 ## Как обновить сайт
 

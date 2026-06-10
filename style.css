@@ -318,3 +318,20 @@ body.hero-c .hero-stage{ transform:translateX(4%) rotate(-1deg); }
   color:#fff; background:linear-gradient(180deg,#5aa6ff,var(--blue-deep));
   box-shadow:0 6px 18px -6px rgba(47,123,255,.8);
 }
+
+/* ===== Official-style App Store badge ===== */
+.appstore-badge{
+  display:inline-flex; align-items:center; gap:11px;
+  background:#000; border:1px solid rgba(255,255,255,.38);
+  border-radius:13px; padding:9px 17px; text-decoration:none;
+  line-height:1; transition:transform .15s ease, border-color .15s ease;
+}
+.appstore-badge:hover{ transform:translateY(-2px); border-color:rgba(255,255,255,.7); }
+.appstore-badge svg{ width:25px; height:auto; flex:none; fill:#fff; }
+.appstore-badge .ab-txt{ display:flex; flex-direction:column; }
+.appstore-badge .ab-1{ font-size:11px; font-weight:500; color:#fff; letter-spacing:.01em; }
+.appstore-badge .ab-2{ font-size:21px; font-weight:600; color:#fff; letter-spacing:-.01em; margin-top:2px; }
+.appstore-badge.ab-sm{ padding:6px 12px; gap:8px; border-radius:10px; }
+.appstore-badge.ab-sm svg{ width:18px; }
+.appstore-badge.ab-sm .ab-1{ font-size:8px; }
+.appstore-badge.ab-sm .ab-2{ font-size:15px; margin-top:1px; }
